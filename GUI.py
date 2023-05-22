@@ -40,6 +40,11 @@ class UserInterface(Frame):
         self.operator_options = OptionMenu(self, self.operator_var, "addition", "subtraction", "multiplication", "division")
         self.operator_options.grid(row=2, column=1)
 
+        # Method to define a function to be called when the button is pressed
+        def button_press(self):
+            
+
+
          
 
 
