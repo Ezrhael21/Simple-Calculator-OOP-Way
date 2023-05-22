@@ -24,6 +24,13 @@ class UserInterface(Frame):
         self.input2_label = Label(self, text = "Input 2:", bg="blue")
         self.input2_label.grid (row=1, column=0)
 
+        #Widget for Input2 Label
+        self.input2 = Entry(self)
+        self.input2.grid (row=1, column=1)
+
+        
+
+
 
 
 
