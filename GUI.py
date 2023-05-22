@@ -58,6 +58,11 @@ class UserInterface(Frame):
                 elif operator == "division":
                     result = self.calulator.divide(number_one, number_two)
                 
+                # Update the result label with the calculated value
+                result_label.config(text = result)
+            
+            
+            
 
             
 
