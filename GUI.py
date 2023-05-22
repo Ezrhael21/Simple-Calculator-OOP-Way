@@ -40,26 +40,28 @@ class UserInterface(Frame):
         self.operator_options = OptionMenu(self, self.operator_var, "addition", "subtraction", "multiplication", "division")
         self.operator_options.grid(row=2, column=1)
 
-        # Method to define a function to be called when the button is pressed
-        def button_press(self):
-            try:
-                # Retrieve the values from the input fields and operator selection
-                number_one = self.input1.get()
-                number_two = self.input2.get()
-                operator = self.operator_var.get()
+    # Method to define a function to be called when the button is pressed
+    def button_press(self):
+        try:
+            # Retrieve the values from the input fields and operator selection
+            number_one = self.input1.get()
+            number_two = self.input2.get()
+            operator = self.operator_var.get()
 
-                # Perform the calculation based on the selected operator
-                if operator == "addition":
-                    result = self.calculator.add(number_one, number_two)
-                elif operator == "subtraction":
-                    result = self.calculator.subtract(number_one, number_two)
-                elif operator == "multiplication":
-                    result = self.calculator.multiply(number_one, number_two)
-                elif operator == "division":
-                    result = self.calulator.divide(number_one, number_two)
+            # Perform the calculation based on the selected operator
+            if operator == "addition":
+                result = self.calculator.add(number_one, number_two)
+            elif operator == "subtraction":
+                result = self.calculator.subtract(number_one, number_two)
+            elif operator == "multiplication":
+                result = self.calculator.multiply(number_one, number_two)
+            elif operator == "division":
+                result = self.calulator.divide(number_one, number_two)
                 
-                # Update the result label with the calculated value
-                result_label.config(text = result)
+            # Update the result label with the calculated value
+            result_label.config(text=result)
+
+
             
             
             
