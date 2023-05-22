@@ -8,7 +8,12 @@ from tkinter import *
 # Import UserInterface
 from GUI import UserInterface
 
+# Create the window
+window = Tk()
+window.title("Simple Calculator")
+window.geometry("400x200")
 
+window.mainloop()
 
 
 
