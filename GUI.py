@@ -1,4 +1,5 @@
 from tkinter import *
+from Calculator import Calculate
 
 # Class for User Interface
 class UserInterface(Frame):
@@ -7,7 +8,7 @@ class UserInterface(Frame):
         Frame.__init__(self, master)
         self.grid()
         self.create_widgets()
-        self.calculator()
+        self.calculator = Calculate()
     
     # Method to create widgets
     def create_widgets(self):
