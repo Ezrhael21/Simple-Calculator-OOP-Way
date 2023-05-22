@@ -51,6 +51,10 @@ class UserInterface(Frame):
                 # Perform the calculation based on the selected operator
                 if operator == "addition":
                     result = self.calculator.add(number_one, number_two)
+                elif operator == "subtraction":
+                    result = self.calculator.subtract(number_one, number_two)
+                    
+
             
 
             
