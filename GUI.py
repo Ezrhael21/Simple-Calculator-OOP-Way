@@ -42,11 +42,11 @@ class UserInterface(Frame):
 
         # Widget to trigger the calculation
         self.button = Button(self, text="Calculate", command=self.button_press, bg="green")
-        self.button.pack()
+        self.button.grid(row=3, column=1)
 
         # Widget to display results
         self.result_label = Label(self, text="")
-        self.result_label.pack()
+        self.result_label.grid(row=4, column=1)
 
     # Method to define a function to be called when the button is pressed
     def button_press(self):
@@ -76,6 +76,8 @@ class UserInterface(Frame):
         # Clear the input fields after each calculation
         self.input1.delete(0, END)
         self.input2.delete(0, END)
+
+
 
 
 
