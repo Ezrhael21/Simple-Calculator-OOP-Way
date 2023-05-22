@@ -67,7 +67,12 @@ class UserInterface(Frame):
                 result = self.calulator.divide(number_one, number_two)
                 
             # Update the result label with the calculated value
-            result_label.config(text=result)
+            self.result_label.config(text=result)
+
+        # Handle the case of invalid inputs
+        except ValueError:
+            self.result_label.config(text="Invalid Input. Try again!")
+
 
 
             
