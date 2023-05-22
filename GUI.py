@@ -59,13 +59,13 @@ class UserInterface(Frame):
 
             # Perform the calculation based on the selected operator
             if operator == "addition":
-                result = self.calculator.add(number_one, number_two)
+                result = self.calculator.add(int(number_one), int(number_two))
             elif operator == "subtraction":
-                result = self.calculator.subtract(number_one, number_two)
+                result = self.calculator.subtract(int(number_one), int(number_two))
             elif operator == "multiplication":
-                result = self.calculator.multiply(number_one, number_two)
+                result = self.calculator.multiply(int(number_one), int(number_two))
             elif operator == "division":
-                result = self.calulator.divide(number_one, number_two)
+                result = self.calculator.divide(int(number_one), int(number_two))
                 
             # Update the result label with the calculated value
             self.result_label.config(text=result)
