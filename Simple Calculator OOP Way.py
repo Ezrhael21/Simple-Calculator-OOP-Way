@@ -5,6 +5,7 @@
 
 # Pseudocode
 # Import Tkinter
+from tkinter import *
 # Create a class for the following:
 # Class for User Interface
     # Initialize the frame
