@@ -55,7 +55,9 @@ class UserInterface(Frame):
                     result = self.calculator.subtract(number_one, number_two)
                 elif operator == "multiplication":
                     result = self.calculator.multiply(number_one, number_two)
-                  
+                elif operator == "division":
+                    result = self.calulator.divide(number_one, number_two)
+                
 
             
 

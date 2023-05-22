@@ -6,7 +6,9 @@ class Calculator:
     # Method to subtract two numbers
     def subtract(self, number_one, number_two):
         return number_one - number_two
-    #Method to multiply two numbers
+    # Method to multiply two numbers
     def multiply(self, number_one, number_two):
         return number_one * number_two
-    
+    # Method to divide two numbers
+    def divide(self, number_one, number_two):
+        return number_one / number_two
