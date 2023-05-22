@@ -32,7 +32,11 @@ class UserInterface(Frame):
         self.operator_label = Label(self, text = "Select Oprator:")
         self.operator_label.grid (row=2, column=0)
 
+        # Set the initial string value to "addition"
+        self.operator_var = StringVar(self)
+        self.operator_var.set("addition")
 
+        
 
 
 
