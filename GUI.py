@@ -40,9 +40,13 @@ class UserInterface(Frame):
         self.operator_options = OptionMenu(self, self.operator_var, "addition", "subtraction", "multiplication", "division")
         self.operator_options.grid(row=2, column=1)
 
-        # Method to trigger the calculation
+        # Widget to trigger the calculation
         self.button = Button(self, text="Calculate", command=self.button_press, bg="green")
         self.button.pack()
+
+        # Widget to display results
+        self.result_label = Label(self, text="")
+        self.result_label.pack()
 
     # Method to define a function to be called when the button is pressed
     def button_press(self):
