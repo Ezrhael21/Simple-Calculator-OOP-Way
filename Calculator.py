@@ -1,2 +1,5 @@
 # Class for Calculator
-class Calculator(self, number_one, number_two):
+class Calculator:
+    def add(self, number_one, number_two):
+        return number_one + number_two
+

@@ -47,6 +47,10 @@ class UserInterface(Frame):
                 number_one = self.input1.get()
                 number_two = self.input2.get()
                 operator = self.operator_var.get()
+
+                # Perform the calculation based on the selected operator
+                if operator == "addition":
+                    result = self.calculator.add(number_one, number_two)
             
 
             
