@@ -42,6 +42,13 @@ class UserInterface(Frame):
 
         # Method to define a function to be called when the button is pressed
         def button_press(self):
+            try:
+                # Retrieve the values from the input fields and operator selection
+                number_one = self.input1.get()
+                number_two = self.input2.get()
+                operator = self.operator_var.get()
+            
+
             
 
 
