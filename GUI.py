@@ -73,6 +73,10 @@ class UserInterface(Frame):
         except ValueError:
             self.result_label.config(text="Invalid Input. Try again!")
 
+        # Clear the input fields after each calculation
+        self.input1.delete(0, END)
+        self.input2.delete(0, END)
+
 
 
             
