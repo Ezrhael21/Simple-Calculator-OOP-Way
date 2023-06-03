@@ -25,7 +25,7 @@ class UserInterface(Frame):
         self.input2_label = Label(self, text = "Input 2:", bg="blue")
         self.input2_label.grid (row=1, column=0)
 
-        # Widget for Input2 Label
+        # Widget for Input2 Entry
         self.input2 = Entry(self)
         self.input2.grid (row=1, column=1)
 
@@ -38,7 +38,7 @@ class UserInterface(Frame):
         self.operator_var.set("addition")
 
         # Create a drop down menu for selecting operator
-        self.operator_options = OptionMenu(self, self.operator_var, "addition", "subtraction", "multiplication", "division")
+        self.operator_options = OptionMenu(self, self.operator_var, "addition", "subtraction", "multiplication", "division", "squared")
         self.operator_options.grid(row=2, column=1)
 
         # Widget to trigger the calculation
@@ -66,6 +66,10 @@ class UserInterface(Frame):
                 result = self.calculator.multiply(int(number_one), int(number_two))
             elif operator == "division":
                 result = self.calculator.divide(int(number_one), int(number_two))
+            elif operator == "squared":
+                self.input2_label.grid_forget()
+                self.input2.grid_forget()
+                result = self.calculator.squared(int(number_one))
                 
             # Update the result label with the calculated value
             self.result_label.config(text=result)
