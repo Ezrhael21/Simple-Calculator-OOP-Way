@@ -8,7 +8,7 @@ class UserInterface(Frame):
         Frame.__init__(self, master)
         self.grid()
         self.create_widgets()
-        self.New_Calculator = OtherOptions()
+        self.new_calculator = OtherOptions()
     
     # Method to create widgets
     def create_widgets(self):
@@ -68,15 +68,15 @@ class UserInterface(Frame):
 
             # Perform the calculation based on the selected operator
             if operator == "addition":
-                result = self.New_Calculator.add(int(number_one), int(number_two))
+                result = self.new_calculator.add(int(number_one), int(number_two))
             elif operator == "subtraction":
-                result = self.New_Calculator.subtract(int(number_one), int(number_two))
+                result = self.new_calculator.subtract(int(number_one), int(number_two))
             elif operator == "multiplication":
-                result = self.New_Calculator.multiply(int(number_one), int(number_two))
+                result = self.new_calculator.multiply(int(number_one), int(number_two))
             elif operator == "division":
-                result = self.New_Calculator.divide(int(number_one), int(number_two))
+                result = self.new_calculator.divide(int(number_one), int(number_two))
             elif operator == "squared":
-                result = self.New_Calculator.squared(int(number_one))
+                result = self.new_calculator.squared(int(number_one))
                 
             # Update the result label with the calculated value
             self.result_label.config(text=result)
