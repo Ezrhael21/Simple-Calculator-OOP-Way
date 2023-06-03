@@ -1,5 +1,5 @@
 from tkinter import *
-from Calculator import Calculate
+from New_Calculator import OtherOptions
 
 # Class for User Interface
 class UserInterface(Frame):
@@ -8,7 +8,7 @@ class UserInterface(Frame):
         Frame.__init__(self, master)
         self.grid()
         self.create_widgets()
-        self.calculator = Calculate()
+        self.New_Calculator = OtherOptions()
     
     # Method to create widgets
     def create_widgets(self):
@@ -59,17 +59,17 @@ class UserInterface(Frame):
 
             # Perform the calculation based on the selected operator
             if operator == "addition":
-                result = self.calculator.add(int(number_one), int(number_two))
+                result = self.New_Calculator.add(int(number_one), int(number_two))
             elif operator == "subtraction":
-                result = self.calculator.subtract(int(number_one), int(number_two))
+                result = self.New_Calculator.subtract(int(number_one), int(number_two))
             elif operator == "multiplication":
-                result = self.calculator.multiply(int(number_one), int(number_two))
+                result = self.New_Calculator.multiply(int(number_one), int(number_two))
             elif operator == "division":
-                result = self.calculator.divide(int(number_one), int(number_two))
+                result = self.New_Calculator.divide(int(number_one), int(number_two))
             elif operator == "squared":
                 self.input2_label.grid_forget()
                 self.input2.grid_forget()
-                result = self.calculator.squared(int(number_one))
+                result = self.New_Calculator.squared(int(number_one))
                 
             # Update the result label with the calculated value
             self.result_label.config(text=result)
