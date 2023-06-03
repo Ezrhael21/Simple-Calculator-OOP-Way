@@ -76,8 +76,6 @@ class UserInterface(Frame):
             elif operator == "division":
                 result = self.New_Calculator.divide(int(number_one), int(number_two))
             elif operator == "squared":
-                self.input2_label.grid_forget()
-                self.input2.grid_forget()
                 result = self.New_Calculator.squared(int(number_one))
                 
             # Update the result label with the calculated value
