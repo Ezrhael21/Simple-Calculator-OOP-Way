@@ -5,7 +5,7 @@
 
 # Import Tkinter
 from tkinter import *
-# Import UserInterface
+# Import NewUserInterface
 from New_User_Interface import NewUserInterface
 
 # Create the window
