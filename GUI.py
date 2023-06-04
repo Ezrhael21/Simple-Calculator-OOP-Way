@@ -48,7 +48,7 @@ class UserInterface(Frame):
         # Widget to display results
         self.result_label = Label(self, text="")
         self.result_label.grid(row=4, column=1)
-
+        
     # Method to remove input 2 from the widget when squared is pressed
     def new_options(self, selected_operator):
         if selected_operator == "squared":
