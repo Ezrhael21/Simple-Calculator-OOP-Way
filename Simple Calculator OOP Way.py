@@ -6,15 +6,15 @@
 # Import Tkinter
 from tkinter import *
 # Import UserInterface
-from GUI import UserInterface
+from New_User_Interface import NewUserInterface
 
 # Create the window
 window = Tk()
 window.title("Simple Calculator")
 window.geometry("400x200")
 
-# Call the User Interface
-app = UserInterface(window)
+# Call the New User Interface
+app = NewUserInterface(window)
 
 window.mainloop()
 
